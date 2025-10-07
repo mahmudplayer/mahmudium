@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>_--( M A H M U D B R O W S E R )--_</title>
+<link rel="icon" type="image/png" href="favicon.png" sizes="64x64">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif}
+body{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:url('background.png') no-repeat center/cover;color:#fff;text-align:center}
+.search-container{margin-bottom:30px}
+.search-container input{width:400px;padding:10px 15px;border-radius:25px;border:none;outline:none;font-size:16px;background:rgba(0,0,0,0.2);backdrop-filter:blur(10px);color:#fff}
+.links{display:grid;grid-template-columns:repeat(5,1fr);gap:25px;margin-bottom:50px;justify-items:center}
+.link-btn{text-decoration:none;color:#fff;display:flex;flex-direction:column;align-items:center;transition:.2s}
+.link-btn img{width:60px;height:60px;margin-bottom:5px;border-radius:12px;transition:transform .2s}
+.link-btn:hover img{transform:scale(1.1)}
+/* SAATİN YENİ KONUMU */
+#clock-iframe{pointer-events:none;position:fixed;top:15px;left:20px;width:91px;height:30px;border:0;margin:0;padding:0;z-index:999}
+</style>
+</head>
+<body>
+
+<iframe id="clock-iframe" scrolling="no" frameborder="no" clocktype="html5"
+src="https://www.clocklink.com/html5embed.php?clock=008&timezone=Turkey_Ankara&color=black&size=91&Title=&Message=&Target=&From=2025,1,1,0,0,0&Color=white">
+</iframe>
+
+<div class="search-container">
+<form action="https://www.google.com/search" method="get" target="_blank">
+<input type="text" name="q" placeholder="">
+</form>
+</div>
+
+<div class="links">
+<a href="https://www.youtube.com" class="link-btn"><img src="yt.png" alt="YouTube"><span>YouTube</span></a>
+<a href="https://mail.google.com" class="link-btn"><img src="gml.png" alt="Gmail"><span>Gmail</span></a>
+<a href="https://mahmudplayer.github.io/space-wars/" class="link-btn"><img src="icon_game.png" alt="oyun"><span>oyun</span></a>
+<a href="https://chatgpt.com" class="link-btn"><img src="icon_gpt.png" alt="ChatGPT"><span>ChatGPT</span></a>
+<a href="other.html" class="link-btn"><img src="....png" alt="other"><span>diğer</span></a>
+</div>
+
+</body>
+</html>
